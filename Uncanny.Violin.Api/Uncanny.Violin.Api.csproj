@@ -4,7 +4,6 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>Uncanny_Violin.Api</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Uncanny-Violin.Domain\Uncanny-Violin.Domain.csproj" />
+    <ProjectReference Include="..\Uncanny.Violin.Domain\Uncanny.Violin.Domain.csproj" />
   </ItemGroup>
 
 </Project>
