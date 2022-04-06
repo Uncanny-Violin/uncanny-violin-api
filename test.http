@@ -31,5 +31,14 @@ DELETE  https://localhost:5001 HTTP/1.1
 ### GET Catalog
 https://localhost:7102/catalog
 
-### Get Courses
-https://localhost:5001/courses
+
+### Send a POST
+POST https://localhost:7102/catalog HTTP/1.1
+content-type: application/json
+
+{
+    "name" : "Shoes",
+    "description": "Running Shoes",
+    "brand": "Nike",
+    "price": 109.99
+}
