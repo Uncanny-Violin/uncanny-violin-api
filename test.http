@@ -1,0 +1,35 @@
+### Send an implicit GET
+https://localhost:5001
+
+
+### Send and exlicit GET
+GET https://localhost:7102 HTTP/1.1
+
+
+### Send a POST with full HTTP Request Spec
+POST https://localhost:7102 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "test",
+    "time": "Sun, 27 F 2022 18:27:50 GMT"
+}
+
+### Send a PUT with full HTTP Request Spec
+PUT https://localhost:5001 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "test",
+    "time": "Sun, 27 F 2022 18:27:50 GMT"
+}
+
+### Send a PUT with full HTTP Request Spec
+DELETE  https://localhost:5001 HTTP/1.1
+
+
+### GET Catalog
+https://localhost:7102/catalog
+
+### Get Courses
+https://localhost:5001/courses
