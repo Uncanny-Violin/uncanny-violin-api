@@ -2,7 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Uncanny.Violin.Domain.Catalog;
 using System;
 
-namespace Uncanny.Violin.Domain.Tests;
+namespace Uncanny.Violin.Domain.RatingTests;
 
 [TestClass]
 public class RatingTests
