@@ -14,4 +14,8 @@
     <PackageReference Include="coverlet.collector" Version="3.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Uncanny.Violin.Domain\Uncanny.Violin.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
