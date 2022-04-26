@@ -25,7 +25,7 @@ content-type: application/json
 }
 
 ### Send a PUT with full HTTP Request Spec
-DELETE  https://localhost:5001 HTTP/1.1
+DELETE  https://localhost:7102/catalog/3 HTTP/1.1
 
 
 ### GET Catalog
