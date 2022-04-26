@@ -1,3 +1,15 @@
+### GET token from Auth0
+curl --request POST \
+  --url https://dev-1ydn98uq.us.auth0.com/oauth/token \
+  --header 'content-type: application/json' \
+  --data '{"client_id":"tgjeVxEVYQCKfzsHP41pa0io9OnlLqRt","client_secret":"hl8q35BME-bgVZvNHp5-B9JYR-4gLW6q6OdprQp-3mDVAGChrPkVRQjcukGl-Pi7","audience":"https://uncanny-violin","grant_type":"client_credentials"}'
+
+### DELETE a Item to the Catalog collection
+curl --request DELETE \ 
+    --url https://localhost:7102/catalog/3 \
+    --header 'authorization: Bearer {eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndLVUxXNFlkVThGYldzcVdndF9hbiJ9.eyJpc3MiOiJodHRwczovL2Rldi0xeWRuOTh1cS51cy5hdXRoMC5jb20vIiwic3ViIjoidGdqZVZ4RVZZUUNLZnpzSFA0MXBhMGlvOU9ubExxUnRAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vdW5jYW5ueS12aW9saW4iLCJpYXQiOjE2NTEwMDA0NjQsImV4cCI6MTY1MTA4Njg2NCwiYXpwIjoidGdqZVZ4RVZZUUNLZnpzSFA0MXBhMGlvOU9ubExxUnQiLCJzY29wZSI6ImRlbGV0ZTpjYXRhbG9nIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIn0.sOfRv7IOyIdLs9K65d5tK_YfwEFFtH64x9EDPnfoHJ6uYhElGulC-v5XM66N1LFxjA71C9Rxl5yjH3inneM3fPXO08VXUQTOXjaKMLMmxmFTmmDqXnh5Tk92LK6EtadeAkkYQiOGu54L-49jtIg3j-LwlVmXhsylOM61Ks0G5aS5Vr_pZ_NtVr_4z0Jvy8FGgtbRwP4bt5tpGeZgsTS8PyZ2TxU6k14CgAPqc8hQKO6C8X6en1aGHptS1Os5R9Ux0MPm_3YnOK6VzdFpbhgUaQs0-I6hok69Rz9oqX7SwiiLGKqrbgCxbvvCbR4tNUJhwHwfo6f0eZHysU7AX9yuZw}' 
+
+
 ### Send an implicit GET
 https://localhost:5001
 
@@ -25,7 +37,7 @@ content-type: application/json
 }
 
 ### Send a PUT with full HTTP Request Spec
-DELETE  https://localhost:5001 HTTP/1.1
+DELETE  https://localhost:7102/catalog/3 HTTP/1.1
 
 
 ### GET Catalog

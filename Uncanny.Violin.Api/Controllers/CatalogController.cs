@@ -72,7 +72,8 @@ namespace Uncanny.Violin.Api.Controllers
             return NoContent();
         } 
 
-        [HttpDelete("{id:int}")] 
+        [HttpDelete("{id:int}")]
+        [Authorize("delete:catalog")]
         public IActionResult DeleteItem(int id) 
         {
             var item = _db.Items.Find(id);
