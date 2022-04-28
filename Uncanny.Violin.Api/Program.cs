@@ -12,6 +12,9 @@ string audience = builder.Configuration["Auth0:Audience"] ??
 string authority = builder.Configuration["Auth0:Authority"] ??
     throw new ArgumentNullException("Auth0:Authrotiy");
 
+string storeConnectionString = builder.Configuration.GetConnectionString("StoreConnection") ??
+    throw new ArgumentNullException("ConnectionString:StoreConnection");
+
 builder.Services.AddControllers();
 
 builder.Services.AddAuthentication(options =>
@@ -32,7 +35,7 @@ builder.Services.AddAuthorization(options =>
     });
 
 builder.Services.AddDbContext<StoreContext>(options => 
-	options.UseSqlite("Data Source = ../Registrar.sqlite", 
+	options.UseSqlServer(storeConnectionString, 
 	b => b.MigrationsAssembly("Uncanny.Violin.Api"))
 );
 
