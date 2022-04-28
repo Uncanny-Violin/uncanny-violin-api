@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc; 
 using Uncanny.Violin.Domain.Catalog;
 using Uncanny.Violin.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Uncanny.Violin.Api.Controllers
 {
