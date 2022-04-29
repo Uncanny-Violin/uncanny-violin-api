@@ -43,7 +43,8 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(builder =>
     {
-        builder.WithOrigins("http://localhost:3000")
+        builder.WithOrigins("http://localhost:3000",
+			"https://uncanny-violin-api.azurewebsites.net")
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
