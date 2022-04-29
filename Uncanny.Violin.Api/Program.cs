@@ -6,11 +6,11 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 var builder = WebApplication.CreateBuilder(args);
 
-string authority = builder.Configuration ["Auth0: Authority"] ?? 
-	throw new ArgumentNullException("Auth0:Authority"); 
-
-string audience = builder.Configuration ["Auth0: Audience"] ?? 
+string audience = builder.Configuration ["Auth0:Audience"] ?? 
 	throw new ArgumentNullException("Auth0:Audience"); 
+
+string authority = builder.Configuration ["Auth0:Authority"] ?? 
+	throw new ArgumentNullException("Auth0:Authority"); 
 
 builder.Services.AddControllers(); 
 
@@ -72,6 +72,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseCors();
+
+app.UseRouting();
 
 app.UseAuthentication();
 
