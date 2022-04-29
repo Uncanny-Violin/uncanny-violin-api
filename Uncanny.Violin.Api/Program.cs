@@ -10,7 +10,7 @@ string audience = builder.Configuration["Auth0:Audience"] ??
     throw new ArgumentNullException("Auth0:Audience");
 
 string authority = builder.Configuration["Auth0:Authority"] ??
-    throw new ArgumentNullException("Auth0:Authrotiy");
+    throw new ArgumentNullException("Auth0:Authority");
 
 builder.Services.AddControllers();
 
@@ -86,6 +86,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseRouting();
 
 app.UseCors();
 
