@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'uncanny-violin-api'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8701152DFEA7447FBC15377863D058E3 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F0E6863083514A529E54EDDC45076A0B }}
           package: .
